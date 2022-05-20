@@ -1,8 +1,10 @@
 # Reservoir
 #### A [HackMoney 2022](https://hack.ethglobal.com/hackmoney2022/) Project
+For full context please [read the user story](https://hackmd.io/@kitblake/BkkYw1bwc) that explains the use case.
+
 ## Streaming Money Reservoirs – Technical Description
 
-The primary component is a smart contract called a Reservoir. It acts as a DeFi Vault and manages supply to DeFi protocols. It also allows [Superfluid](https://superfluid.finance/) money streams to flow in or out. A Reservoir is locked and only accessible via its creator wallet. 
+The primary component is a Dapp called a Reservoir. It acts as a DeFi Vault and manages supply to DeFi protocols. It also allows [Superfluid](https://superfluid.finance/) money streams to flow in or out. A Reservoir is locked and only accessible via its creator wallet. 
 
 - A Reservoir is created by deploying the contract from a template.
 - The wallet that creates the Reservoir can access the contract via a frontend.
@@ -32,5 +34,3 @@ The steps to create a functioning Reservoir are:
     - Depending on the currencies used some streams might need SuperToken swaps.
 - If the Reservoir has incoming streams the steps are similar but with deposits.
   - Configure parameters (frequency, proportions) for new DeFI supplies.
-
-For full context [read the user story](https://hackmd.io/@kitblake/BkkYw1bwc) that explains the use case.
